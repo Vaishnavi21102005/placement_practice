@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    printf("*\n**\n***");
+}
+
+#include<stdio.h>
+int main()
+{
+    printf("%d",sizeof(long int));
+}
+
+#include<stdio.h>
+int main()
+{
+    printf("%d",sizeof(short int));
+}
+
+#include<stdio.h>
+int main()
+{
+    printf("\"Welcome to C Programming\"");
+}
