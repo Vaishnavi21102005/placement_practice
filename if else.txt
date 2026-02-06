@@ -1,0 +1,206 @@
+27/12/2025
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",a);
+    if(a>0)
+    {
+    printf("positive");
+    }
+    else{
+        printf("negative");
+    }
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int n=2,m=5;
+    if(n<m)
+    {
+        printf("%d",n);
+    }
+    else
+    {
+        printf("%d",m);
+    }
+}
+
+
+#include<stdio.h>
+int main()
+{
+    char ch='a';
+    if(ch>='A' && ch<='Z')
+    {
+    printf("uppercase");
+    }
+    else{
+        printf("not an uppercase");
+    }
+}
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%c",ch);
+    if(ch>='0' && ch<='9')
+    {
+    printf("digits");
+    }
+    else{
+        printf("not a digits");
+    }
+}
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a==1)
+        printf("Sunday");
+    else if(a==2)
+        printf("Monday");
+    else if(a==3)
+        printf("Tuesday");
+    else if(a==4)
+            printf("Wednesday");
+    else if(a==5)
+        printf("Thursday");
+    else if(a==6)
+        printf("Friday");
+    else if(a==7)
+        printf("Saturday");
+    else
+        printf("Invalid");
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    char c;
+    scanf("%d %d %c",&a,&b,&c);
+    if(c=='+')
+        printf("%d",a+b);
+    else if(c=='-')
+        printf("%d",a-b);
+    else if(c=='*')
+        printf("%d",a*b);
+    else if(c=='/')
+        printf("%d",a/b);
+    else if(c=='%')
+        printf("%d",a%b);
+    else
+        printf("Invalid");
+}
+
+#include<stdio.h>
+int main()
+{
+    char c;
+    scanf("%c",&c);
+    if(c>='A' && c<='Z')
+        printf("Upper case");
+    else if(c>='a' && c<='z')
+        printf("Lower case");
+    else if(c>='0' && c<='9')
+        printf("Digits");
+    else
+        printf("Special characters");
+}
+
+#include<stdio.h>
+int main()
+{
+    int year;
+    scanf("%d",&year);
+    if(year%4==0)
+    {
+        if(year%100==0)
+        {
+            if(year%400==0)
+                printf("Leap year");
+            else
+                printf("Not Leap year");
+        }
+        else
+            printf("Leap Year");
+    }
+    else
+        printf("Not Leap year");
+}
+
+
+
+SWITCH CASE
+#include<stdio.h>
+int main()
+{
+    int oper;
+    scanf("%d",&oper);
+    switch(oper)
+    {
+        case 1:printf("Sunday");break;
+        case 2:printf("Monday");break;
+        case 3:printf("Tuesday");break;
+        case 4:printf("Wednesday");break;
+        case 5:printf("Thursday");break;
+        case 6:printf("Friday");break;
+        case 7:printf("Saturday");break;
+        default:
+            printf("Invalid");
+    }
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    char ch;
+    scanf("%d %d %c",&a,&b,&ch);
+    switch(ch
+)
+    {
+        case '+':
+            printf("sum is %d\n",a+b);
+        case '-':
+            printf("Difference is %d\n",a-b);
+        case '*':
+            printf("multiply is %d\n",a*b);
+        case '?':
+            printf("Quotient is %d\n",a/b);
+        case '%':
+            printf("Remainder is %d",a%b);break;
+        default:
+            printf("Invalid");
+    }
+}
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    switch(ch)
+    {
+        case 'A'...'Z':
+            printf("Uppercase");break;
+        case 'a'...'z':
+            printf("Lowercase");break;
+        case '0'...'9':
+            printf("digits");break;
+        default:
+            printf("Special Characters");
+    }
+}
+
+
+
+

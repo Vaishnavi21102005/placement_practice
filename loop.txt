@@ -1,0 +1,24 @@
+29/12/2025
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int temp=a;
+    int d,c=0;
+    while(a!=0)
+    {
+        int e=a%10;
+        d=1;
+        for(int i=1;i<=e;i++)
+            d*=i;
+        a/=10;
+        c+=d;
+    }
+    if(temp==c)
+        printf("strong");
+    else
+        printf("Not");
+}
+
