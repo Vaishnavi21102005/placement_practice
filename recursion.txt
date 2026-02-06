@@ -1,0 +1,75 @@
+9/1/26
+
+#include<stdio.h>
+int natural_no(int num)
+{
+    if(num<=0)
+        return 0;
+    natural_no(num-1);
+    printf("%d",num);
+    natural_no(num-1);
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    natural_no(num);
+
+
+}
+
+
+#include<stdio.h>
+long long int factorial(int num)
+{
+    if(num==0 || num==1)
+        return 1;
+    return num*factorial(num-1);
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    printf("%lld",factorial(num));
+}
+
+
+#include<stdio.h>
+int digit(int num)
+{
+    if(num==0)
+        return 0;
+    printf("%d ",num%10);
+    digit(num/10);
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    digit(num);
+}
+
+
+#include<stdio.h>
+int odd(int);
+int even(int);
+int odd(int num)
+{
+    if(num==0)
+        return 0;
+    printf("%d ",num-1);
+    even(num-1);
+}
+int even(int num)
+{
+    if(num==0)
+        return 0;
+    printf("%d ",num+1);
+    odd(num-1);
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    odd(num);
+}

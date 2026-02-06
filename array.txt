@@ -1,0 +1,131 @@
+#include<stdio.h>
+int main(){
+    printf("Hello World");
+}
+
+
+
+#include<stdio.h>
+int main(){
+    int age;
+    scanf("%d",&age);
+    printf("your age is %d",age);
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    float mark;
+    scanf("%f",&mark);
+    printf("mark is %.2f",mark);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main(){
+    char var;
+    scanf("%c",&var);
+    printf("the given var is %c",var);
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int score1,score2,score3;
+    scanf("%d%d%d",&score1,&score2,&score3);
+    printf("%d %d %d",score1,score2,score3);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    char ch1,ch2;
+    float f1,f2;
+    scanf("%d %d %c %c %f %f",&a,&b,&ch1,&ch2,&f1,&f2);
+    printf("%d %d %c %c %f %f",a,b,ch1,ch2,f1,f2);
+}
+
+#include<stdio.h>
+int main()
+{
+    int a='D';
+    printf("%d",a);
+}
+
+#include<stdio.h>
+int main()
+{
+    int a='D';
+    printf("%c",a);
+}
+
+#include<stdio.h>
+int main()
+{
+    printf("Let's learn C program and \"Boost Your career...!\"");
+}
+
+26/12/2025
+
+#include<stdio.h>
+int main()
+{
+    float mark;
+    int width;
+    scanf("%f %d",&mark,&width);
+    printf("%08.*f",mark,width);
+}
+
+#include<stdio.h>
+int main()
+{
+    int a=29;
+    printf("%d",~a);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int a=-29;
+    printf("%d",~a);
+    return 0;
+}
+
+LEFT SHIFT
+#include<stdio.h>
+int main()
+{
+    int a=15,b=3;
+    printf("%d",a<<b);
+    return 0;
+}
+
+RIGHT SHIFT#include<stdio.h>
+int main()
+{
+    int a=15,b=3;
+    printf("%d",a>>b);
+    return 0;
+}
+
+TERNARY OPERATOR
+#include<stdio.h>
+int main()
+{
+    int a=15,b=3;
+    (a!=b)?printf("True"):printf("False");
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    char a='c',b='h',c='a',d='r';
+    printf("%c %c %c %c\n",a,b,c,d);
+    printf("%d",a+b+c+d);
+    return 0;
+}

@@ -1,0 +1,54 @@
+10/1/2026
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int num=5;
+    int *ptr;
+    ptr=(int *)malloc(sizeof(int)*5);
+    int itr;
+    for(itr=0;itr<num;itr++)
+        printf("%u ",ptr+itr);
+}
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int num=5;
+    int *ptr;
+    ptr=(int *)calloc(sizeof(int),5);
+    int itr;
+    for(itr=0;itr<num;itr++)
+        printf("%u ",(ptr+itr));
+    for(itr=0;itr<num;itr++)
+        printf("%d ",*(ptr+itr));
+    for(itr=0;itr<num;itr++)
+       *(ptr+itr)=itr+1;
+    for(itr=0;itr<num;itr++)
+        printf("%d ",*(ptr+itr));
+
+}
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int num=5;
+    int *ptr;
+    ptr=(int *)calloc(sizeof(int),5);
+    int itr;
+    for(itr=0;itr<num;itr++)
+        printf("%u ",(ptr+itr));
+    for(itr=0;itr<num;itr++)
+        printf("%d ",*(ptr+itr));
+    for(itr=0;itr<num;itr++)
+       *(ptr+itr)=itr+1;
+    for(itr=0;itr<num;itr++)
+        printf("%d ",*(ptr+itr));
+
+}

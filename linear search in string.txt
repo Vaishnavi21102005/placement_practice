@@ -1,0 +1,31 @@
+8/1/26
+#include<stdio.h>
+#include<stdbool.h>
+int main()
+{
+    char str[100];
+    scanf("%[^\n]",str);
+    int s_idx,e_idx,itr=0,i;
+    char temp;
+    while(true)
+    {
+        s_idx=itr;
+        e_idx=s_idx;
+        for(i=s_idx;str[i]!=' ' && str[i]!='\0';i++);
+        e_idx=i-1;
+        while(s_idx<e_idx)
+        {
+            temp=str[s_idx];
+            str[s_idx]=str[e_idx];
+            str[e_idx]=temp;
+            s_idx++;
+            e_idx--;
+        }
+        if(str[i]=='\0')
+            break;
+        itr=i+1;
+    }
+    printf("%s",str);
+}
+
+
